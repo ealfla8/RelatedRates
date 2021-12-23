@@ -183,8 +183,6 @@ heightValueLabel.place(x = 10, y = 300)
 heightEntry = tk.Entry(window)
 heightEntry.place(x = 10, y = 320)
 
-
-
 # function called when the enter buttin is pressed
 # the function displays the graph of the rate of change selected near the initial radius/length
 # the function displays the rate of change at the initial radius/height 
@@ -289,9 +287,9 @@ def getInfo(message, e1, e2, e3, e4, e5):
     plot.plot(float(e4.get()), f(float(e4.get())), 'bo')
     
     
-
 # setting up the message that will display the rate of change at the inital radius/length        
 message = tk.Label()
+    
 displayanswer = partial(getInfo, message, volumeentry, radiusentry, lengthentry, currententry, heightEntry)
 message.place(x = 10, y = 500)
 
